@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
-const { sessionSecret } = require('./config/config');
+const { secretCode } = require('./config/config');
 const authRoutes = require('./routes/authRoutes');
 
 const app = express();
@@ -10,7 +10,7 @@ app.use(cookieParser());
 
 // Setup session middleware
 app.use(session({
-    secret: 'HELLOWORLD',  // Session secret for signing the session cookie
+  secret: secretCode,  
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false }  // In production, set this to 'true' and use HTTPS

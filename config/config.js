@@ -1,8 +1,5 @@
-require('dotenv').config();
+require('dotenv').config(); 
 
-module.exports ={
-    sessionSecret : process.env.sessionSecret,
+module.exports = {
+  secretCode: process.env.secretCode,  
 };
-
-// such as environment variables for security, or application-level settings for configuration.
-// This file is used to store configuration settings for the application.   
