@@ -19,7 +19,7 @@ Feel free to use it as a backend solution for your frontend applications.
 ## 🚀 Features
 - **User Authentication:** A simple login mechanism
 - **Middleware:** Protect routes using middleware that checks for valid tokens.
-- **Best Practices:** Focused on security practices, such as using JWT tokens and middleware.
+- **Best Practices:** Focused on security practices, such as using middleware.
 
 ## 🛠️ Installation
 
